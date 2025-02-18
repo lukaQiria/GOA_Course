@@ -1,12 +1,5 @@
-name = "luka"
-surname = "qiria"
-print(name)
-name = "luka"
-age = "13"
-height = "1.65"
-knows_programming = True
-is_ugly = False
-isUgly = False
-print (name + " " + surname)
-print(name + " " + str(age))
-
+name = "my name is luka"
+surname = "my last name is qiria"
+age = "am 13 years old"
+height = "am 1,67 cm tall"
+print(name + " " + surname + " " + age + " " + height)
