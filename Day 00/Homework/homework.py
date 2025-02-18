@@ -1,12 +1,73 @@
-name = "luka"
-surname = "qiria"
-print(name)
-name = "luka"
-age = "13"
-height = "1.65"
-knows_programming = True
-is_ugly = False
-isUgly = False
-print (name + " " + surname)
-print(name + " " + str(age))
+from turtle import*
+width(5)
+
+
+forward(300)
+left(90)
+forward(220)
+left(60)
+forward(180)
+left(60)
+forward(180)
+
+
+
+left(62)
+forward(220)
+left(88)
+forward(120)
+left(90)
+forward(100)
+right(90)
+forward(50)
+right(90)
+forward(100)
+left(90)
+forward(135)
+left(90)
+forward(130)
+left(90)
+forward(80)
+right(90)
+forward(60)
+right(90)
+forward(80)
+right(90)
+forward(30)
+right(90)
+forward(80)
+left(90)
+forward(30)
+left(90)
+forward(40)
+left(90)
+forward(60)
+right(90)
+forward(40)
+left(90)
+forward(30)
+left(90)
+forward(310)
+left(90)
+forward(90)
+left(90)
+forward(80)
+left(90)
+forward(60)
+left(90)
+forward(80)
+left(90)
+forward(30)
+left(90)
+forward(80)
+left(90)
+forward(30)
+left(90)
+forward(40)
+left(90)
+forward(55)
+
+exitonclick()
+
+
 
