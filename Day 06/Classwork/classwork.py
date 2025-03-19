@@ -1,0 +1,8 @@
+name = input('hello Luka you are 14 years old')
+print(name)
+num1 = input('please input number 5')
+num2 = input('please input number 4')
+print(int(num1) + int(num2))
+print(int(num1) / int(num2))
+print(int(num1) * int(num2))
+print(int(num1) - int(num2))
