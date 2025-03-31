@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinosaurs World</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/quizjs@1.0.0/quiz.js"></script>
+    <style>
+        .dino img {
+            width: 80%; /* Adjusting image sizes */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1 class="title">Welcome to the Dinosaur Era</h1>
+        <p class="subtitle">Discover the giants that once ruled the Earth</p>
+    </header>
+    
+    <section class="introduction">
+        <h2>About Dinosaurs</h2>
+        <p>Dinosaurs were a diverse group of reptiles that appeared during the Mesozoic Era, around 230 million years ago. They evolved into a variety of species, some of which were the largest animals to ever walk the Earth.</p>
+    </section>
+    
+    <section class="dinosaurs">
+        <div class="dino" id="spinosaurus" onclick="showInfo('Spinosaurus', 'Spinosaurus was one of the largest carnivorous dinosaurs, even bigger than the T-Rex! It had a distinctive sail on its back and was semi-aquatic, spending much of its time hunting fish. Recent discoveries suggest it had webbed feet and a long, crocodile-like snout.')">
+            <h2>Spinosaurus</h2>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.pQNkNy0ecCqEsTCloQbwVAHaEc&pid=Api" alt="Spinosaurus">
+        </div>
+        <div class="dino" id="trex" onclick="showInfo('Tyrannosaurus Rex', 'The T-Rex was a powerful predator with an incredible bite force of over 12,800 pounds. It had strong legs for running and tiny but strong arms that may have been used for gripping prey. It lived in the late Cretaceous period and is one of the most famous dinosaurs.')">
+            <h2>Tyrannosaurus Rex</h2>
+            <img src="https://tse4.mm.bing.net/th?id=OIP.OUa-VgjmSVLSo8Wg69rQzwHaH0&pid=Api" alt="Tyrannosaurus Rex">
+        </div>
+        <div class="dino" id="brachiosaurus" onclick="showInfo('Brachiosaurus', 'Brachiosaurus was a massive herbivore that could reach the tallest trees for food. It had longer front legs than back legs, giving it a unique posture. It lived in the Jurassic period and weighed up to 80 tons.')">
+            <h2>Brachiosaurus</h2>
+            <img src="https://tse3.mm.bing.net/th?id=OIP.nLeqxRnISTmgVcVz1TvHtwHaEc&pid=Api" alt="Brachiosaurus">
+        </div>
+        <div class="dino" id="stegosaurus" onclick="showInfo('Stegosaurus', 'Stegosaurus had large plates on its back and a spiked tail for defense against predators. Its brain was relatively small for its body size, but it was still a successful herbivore of the Jurassic period.')">
+            <h2>Stegosaurus</h2>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.2Zhb89K-S7WhTJLA5KAzpgHaGN&pid=Api" alt="Stegosaurus">
+        </div>
+        <div class="dino" id="triceratops" onclick="showInfo('Triceratops', 'Triceratops was a herbivorous dinosaur with three horns on its face, used for defense against predators like the T-Rex. It lived in the late Cretaceous period and could grow up to 30 feet long. It had a large bony frill on its head, which may have been used for display or protection.')">
+            <h2>Triceratops</h2>
+            <img src="https://preview.redd.it/umpznmjfvsp31.jpg?width=500&crop=smart&auto=webp&s=a5e08950668051377f23db36161b77ec3c2123a9" alt="Triceratops">
+        </div>
+    </section>
+    
+    <section id="quiz-section">
+        <h2>Dinosaur Quiz</h2>
+        <p>Test your knowledge of dinosaurs!</p>
+        <button onclick="startQuiz()">Start Quiz</button>
+    </section>
+    
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+    
+    <script>
+        function showInfo(title, text) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-text').innerText = text;
+            document.getElementById('info-modal').style.display = 'block';
+        }
+        function closeModal() {
+            document.getElementById('info-modal').style.display = 'none';
+        }
+    </script>
+    
+    <footer>
+        <p>Explore the prehistoric world | All rights reserved © 2025</p>
+    </footer>
+</body>
+</html>
