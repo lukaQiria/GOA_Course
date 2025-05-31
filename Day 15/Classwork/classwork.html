@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Spring MVC dropdown example using select tag</title>
+</head>
+<body>
+    <h2>Spring MVC dropdown example using select tag</h2>
+
+    <form action="/submit">
+        <table>
+            <tr>
+                <td><b>Country:</b></td>
+                <td>
+                    <select id="countrySelect" name="country">
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>Germany</option>
+                        <option>France</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Favorite Exercise:</b></td>
+                <td>
+                    <select id="exerciseSelect" name="exercise" multiple size="3">
+                        <option>Aerobic</option>
+                        <option>Anaerobic</option>
+                        <option>Flexibility Trng</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

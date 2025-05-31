@@ -1,0 +1,37 @@
+<form>
+  <input type="text" placeholder="შეიყვანე სახელი">
+  <input type="password" placeholder="პაროლი">
+  <input type="email" placeholder="შეიყვანე ელფოსტა">
+  <input type="number" placeholder="შეიყვანე რიცხვი">
+  <input type="date">
+  <input type="time">
+  <input type="file">
+  <input type="submit" value="გაგზავნა">
+</form>
+
+
+<!--
+  label თეგში for ა დაკავშირებულია input-ის id-თან.
+  ეს ეხმარება ბრაუზერს რომ როცა დააწკაპუნებ label-ზე, შესაბამის input-ზე გადავიდეს.
+-->
+
+<label for="username">მომხმარებლის სახელი</label>
+<input type="text" id="username">
+
+
+<video width="320" height="240" controls>
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+<!-- 
+  <source> საშუალებას იძლევა დავამატოთ სხვადასხვა ვიდეო
+  ასე თუ ბრაუზერს ერთი ფორმატი არ უჭერს მხარს, მეორეს გამოიყენებს.
+-->
+<video controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.webm" type="video/webm">
+  <!-- fallback ტექსტი არასწორ ბრაუზერისთვის -->
+  თქვენი ბრაუზერი არ უჭერს მხარს ვიდეოს.
+</video>
