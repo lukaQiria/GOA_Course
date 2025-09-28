@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ka">
+<head>
+  <meta charset="utf-8">
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 420px;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+    thead th {
+      background: #f2f2f2; 
+    }
+    tbody tr:nth-child(1) { background: gold; }
+    tbody tr:nth-child(2) { background: silver; }
+    tbody tr:nth-child(3) { background: peru; }
+    tbody tr:nth-child(n+4) { background: lightgray; }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>ფილმი</th>
+        <th>რეიტინგი</th>
+        <th>ადგილობა</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Sinners</td><td>9.0</td><td>1</td></tr>
+      <tr><td>Pirates of the Caribbean</td><td>8.7</td><td>2</td></tr>
+      <tr><td>Dexter</td><td>8.6</td><td>3</td></tr>
+      <tr><td>Avengers</td><td>8.5</td><td>4</td></tr>
+      <tr><td>Alien vs Predator</td><td>8.0</td><td>5</td></tr>
+    </tbody>
+  </table>
+</body>
+</html>
