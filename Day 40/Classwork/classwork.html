@@ -1,0 +1,64 @@
+body{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Box{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to bottom right, red, green);
+
+    /* აქ გამოიყენება ყველა ნასწავლი transform */
+    transform:
+      translateX - ამოძრავებს ელემენტს x ღერძზე
+translateY - ამოძრავებს ელემენტს y ღერძზე
+scale(x) - ზრდის ელემენტს xჯერ
+skew(x) - წელავს ელემენტს x გრადუსით
+rotate(x) - ატრიალებს ელემენტს x გრადუსით
+}
+
+/*
+translateX – გადაადგილებს ელემენტს x ღერძზე
+translateY – გადაადგილებს ელემენტს y ღერძზე
+scale(x) – ზრდის ელემენტის ზომას
+skew(x,y) – წვრილავს ელემენტს X და Y მიმართულებით
+rotate – ატრიალებს ელემენტს 2D-სივრცეში
+*/
+
+
+
+
+<div class="box1"></div>
+
+<style>
+.box1{
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation: move 3s infinite alternate;
+}
+
+@keyframes move{
+    from{ transform: translateX(0); }
+    to{ transform: translateX(150px); }
+}
+</style>
+<div class="box2"></div>
+
+<style>
+.box2{
+    width: 100px;
+    height: 100px;
+    background: green;
+    transition: 
+        transform 3s, 
+        background-color 5s;
+}
+.box2:hover{
+    transform: scale(2);     
+    background-color: yellow; 
+}
+</style>
