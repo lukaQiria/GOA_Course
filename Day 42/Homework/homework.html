@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<div class="box move"></div>
+
+<style>
+.box {
+  width: 50px;
+  height: 50px;
+  background: red;
+}
+
+.move {
+  animation: move 3s;
+}
+
+@keyframes move {
+  from { left: 0; }
+  to { left: 300px; }
+}
+</style>
+
+<p class="text">Hello</p>
+
+<style>
+.text {
+  animation: color 2s infinite;
+}
+
+@keyframes color {
+  0% { color: red; }
+  50% { color: blue; }
+  100% { color: red; }
+}
+</style>
+
+<p class="text">Hello</p>
+
+<style>
+.text {
+  animation: color 2s infinite;
+}
+
+@keyframes color {
+  0% { color: red; }
+  50% { color: blue; }
+  100% { color: red; }
+}
+</style>
+
+<div class="box scale"></div>
+
+<style>
+.scale {
+  animation: scale 2s infinite;
+}
+
+@keyframes scale {
+  50% { transform: scale(1.5); }
+}
+</style>
+
+<div class="circle"></div>
+
+<style>
+.circle {
+  width: 40px;
+  height: 40px;
+  background: blue;
+  border-radius: 50%;
+  animation: circle 3s infinite linear;
+}
+
+@keyframes circle {
+  to { transform: rotate(360deg) translateX(100px); }
+}
+</style>

@@ -1,7 +1,3 @@
-def greet(name): 
- return "გამარჯობა" + name
-print(greet("არზენი"))
-
-def Max(a,b,c):
- return max(a,b,c)
-print(Max(6,7,9))
+numbers = [11, 56, 70, 3, 65]
+bolo = numbers [-1]
+print("bolo ", bolo)
