@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Transition მაგალითები</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        .color-box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            transition: background-color 0.5s ease;
+            margin-bottom: 20px;
+        }
+
+        .color-box:hover {
+            background-color: lightcoral;
+        }
+
+        .scale-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            transition: transform 0.4s ease;
+            margin-bottom: 20px;
+        }
+
+        .scale-btn:hover {
+            transform: scale(1.2);
+        }
+
+        .fade-text {
+            transition: opacity 0.5s ease;
+            margin-bottom: 20px;
+        }
+
+        .fade-text:hover {
+            opacity: 0.5;
+        }
+
+        .shadow-box {
+            width: 120px;
+            height: 120px;
+            background-color: #ddd;
+            transition: box-shadow 0.5s ease;
+            margin-bottom: 20px;
+        }
+
+        .shadow-box:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        
+        .rotate-img {
+            width: 150px;
+            transition: transform 0.5s ease;
+        }
+
+        .rotate-img:hover {
+            transform: rotate(10deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="color-box"></div>
+
+
+    <button class="scale-btn">Hover me</button>
+
+ 
+    <p class="fade-text">......
+    </p>
+
+    <div class="shadow-box"></div>
+
+    <img class="rotate-img" src="https://via.placeholder.com/150" alt="image">
+
+</body>
+</html>
