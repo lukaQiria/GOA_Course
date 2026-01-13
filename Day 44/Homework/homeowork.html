@@ -1,0 +1,39 @@
+<style>
+
+p { font-size: 24px; }
+@media (max-width: 600px) {
+  p { font-size: 16px; }
+}
+
+.box { width: 400px; }
+@media (max-width: 600px) {
+  .box { width: 100%; }
+}
+
+.container { display: flex; }
+@media (max-width: 700px) {
+  .container { flex-direction: column; }
+}
+
+img { height: 300px; }
+@media (max-width: 500px) {
+  img { height: 150px; }
+}
+
+button { padding: 20px; }
+@media (max-width: 600px) {
+  button { padding: 10px; }
+}
+</style>
+
+
+<p>ტექსტი</p>
+<div class="box">div</div>
+
+<div class="container">
+  <div>ბლოკი 1</div>
+  <div>ბლოკი 2</div>
+</div>
+
+<img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/084699/01/fnd/IND/fmt/png/Orbita-Ultimate-PL-Brilliance-Premier-League-Match-Ball-(FIFA%C2%AE-Quality-Pro)">
+<button>ღილაკი</button>

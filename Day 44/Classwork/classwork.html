@@ -1,0 +1,71 @@
+/* 
+რესპონსიულობის თვისება არის როცა საიტი ელემენტების განალაგებას ცვლის ეკრანის ზომის მიხედვით
+*/
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        @media (max-width: 800px) {
+            .box {
+                background-color: yellow;
+            }
+        }
+
+  
+        @media (max-width: 400px) {
+            .box {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <button onclick="showName()">დააჭირე</button>
+
+    <script>
+        function showName() {
+            alert("თქვენი სახელი და გვარი"); 
+        }
+    </script>
+
+</body>
+</html>
+
+
+<script>
+    console.log("ეს არის  ტექსტი რომელიც კონსოლში გამოჩნდება");
+</script>
+
+
+
+/*
+let:
+გამოიყენება მაშინ, როცა ცვლადის მნიშვნელობა მომავალში შეიძლება შეიცვალოს
+
+const:
+ გამოიყენება მაშინ როცა ცვლადის მნიშვნელობა არ უნდა შეიცვალოს და ერთხელ მინიჭებული მნიშვნელობა იგივე უნდა დარჩეს*/
+
+let age = 14;
+
+const name = "ლუკა"
