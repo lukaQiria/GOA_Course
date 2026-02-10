@@ -8,10 +8,14 @@
 # else:
 #     print("wear a shirt")
 
-number = int(input("input your number here:"))
-if number > 0:
-    print("positive")
-elif number < 0:
-    print("negative")
-else:
-    print("zero")
+# number = int(input("input your number here:"))
+# if number > 0:
+#     print("positive")
+# elif number < 0:
+#     print("negative")
+# else:
+#     print("zero")
+
+def litres(time):
+    return int(time * 0.5)
+print(litres(12.3))

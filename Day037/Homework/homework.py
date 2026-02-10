@@ -10,10 +10,9 @@ def other_angle(a, b):
     return 180 - (a + b)
 
 
-import math
-
 def litres(time):
-    return math.floor(time * 0.5)
+    return int(time * 0.5)
+
 
 
 def cookie(x):
