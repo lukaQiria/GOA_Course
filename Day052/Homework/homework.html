@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+var counter = 0;
+
+setInterval(function(){
+    counter = counter + 1;
+    console.log(counter);
+}, 1000);
+</script>
+
+<script>
+setInterval(function(){
+    document.body.style.backgroundColor = "blue";
+}, 2000);
+</script>
+
+<h1 id="h1">Hello</h1>
+
+<script>
+setInterval(function(){
+    document.getElementById("h1").innerText = "Changed";
+}, 1000);
+</script>
+
+<p id="p">Text</p>
+
+<script>
+var size = 16;
+
+setInterval(function(){
+    size = size + 1;
+    document.getElementById("p").style.fontSize = size + "px";
+}, 3000);
+</script>
+
+<img id="img" src="https://via.placeholder.com/150">
+
+<script>
+var width = 150;
+
+setInterval(function(){
+    width = width + 10;
+    document.getElementById("img").style.width = width + "px";
+}, 2000);
+</script>
